@@ -1,5 +1,5 @@
-import {createRouter, createWebHistory} from "vue-router"
-// import {createWebHistory,createWebHashHistory} from "vue-router"
+// import {createRouter, createWebHistory} from "vue-router"
+import {createRouter,createWebHashHistory} from "vue-router"
 
 // 定义路由组件 和 路由配置
 const routes = [
@@ -26,9 +26,9 @@ const routes = [
 // 创建路由实例
 const router = createRouter({
   // 采用hash 模式
-  // history: createWebHashHistory(),
+  history: createWebHashHistory(),
   // 采用 history 模式
-  history: createWebHistory(),
+  // history: createWebHistory(),
   routes, //使用上方定义的路由配置
 });
 
